@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="elements.css" />
+    </head>
+    <body>
+        <h1>DATA</h1>
+        <!-- <DATA> -->
+        <!-- De ce que j'ai compris, cette balise relie son contenu avec la valeur de son attribut (obligatoire) value
+        pour que l'ordinateur puisse l'interpréter dans le cas où le contenu ne serait pas lisible
+        par la machine (dans le cas d'un script par exemple). Si c'est pas ça bah c'est pas faux
+        -->
+        <li><data value="1">Un</data></li>
+        <li><data value="#000">Couleur noire</data></li>
+        <li><data value="...">Etc</data></li>
+        <!-- SEPARATEUR -->
+        <br><br>
+        <h1>DATALIST</h1>
+        <!-- <DATALIST> -->
+        <!--
+            Sert à insérer une liste prédéfinie dans un input
+        -->
+        <form>
+            <!-- On spécifie un attribut list qui correspondra à
+            l'attribut id du tag datalist pour que l'input sache quelle liste
+            afficher-->
+            <input list="test" name="tests" placeholder="Cliquer pour afficher" />
+            <datalist id="test">
+                <option value="Cette balise">
+                <option value="affiche">
+                <option value="une liste">
+                <option value="prédéfinie">
+                <option value="d'un input">
+            </datalist>
+            <input type="submit" value="Ce bouton ne renvoit rien" />
+        </form>
+        <!-- SEPARATEUR -->
+        <br><br>
+        <h1>DEL</h1>
+        <!-- <DEL> -->
+        <p>Ceci est un exemple pour de la balise DEL : <del>barrer du texte.</del>
+        Utiliser INS pour corriger : <ins>C'est corrigé !</ins> </p>
+        <!-- SEPARATEUR -->
+        <br><br>
+        <h1>PROGRESS</h1>
+        <!-- <PROGRESS> -->
+        <!--
+            Sert à créer une barre de progression
+        -->
+        La balise progress affiche une barre de progression (genre téléchargement).<br>
+        Elle prend 2 attributs : value pour la valeur actuelle et max pour la valeur max.<br>
+        <progress value="66" max="100"></progress><br>
+        En ne définissant pas d'attribut 'value=', seulement le 'max=' on obtient une barre du type :<br>
+        <progress max="100"></progress>
+        <!-- SEPARATEUR -->
+        <br><br>
+        <h1>Column-rule</h1>
+        <!-- Les column -rule -->
+        <div id="histoire">
+            Charlemagne, du latin Carolus Magnus, ou Charles Ier dit « le Grand » dans la nomenclature qui commence avec Clovis Ier, né le 2 avril 742 (voire 747 ou 748), mort le 28 janvier 814 à Aix-la-Chapelle, est un roi des Francs et empereur. Il appartient à la dynastie des Carolingiens, à laquelle il a donné son nom.
+
+Fils de Pépin le Bref, il est roi des Francs à partir de 768, devient par conquête roi des Lombards en 774 et est couronné empereur à Rome par le pape Léon III le 25 décembre 800, relevant une dignité disparue depuis la chute de l'Empire romain d'Occident en 476.
+
+Roi guerrier, il agrandit notablement son royaume par une série de campagnes militaires, en particulier contre les Saxons païens dont la soumission fut difficile et violente (772-804), mais aussi contre les Lombards en Italie et les musulmans d'Al-Andalus.
+
+Souverain réformateur, soucieux d'orthodoxie religieuse et de culture, il protège les arts et les lettres et est à l'origine de la « renaissance carolingienne ».
+
+Son œuvre politique immédiate, l'empire, ne lui survit cependant pas longtemps. Se conformant à la coutume successorale germanique, Charlemagne prévoit dès 806 le partage de l'Empire entre ses trois fils. Après de nombreuses péripéties, l'empire ne sera finalement partagé qu'en 843 entre trois de ses petits-fils (traité de Verdun).
+
+Le morcellement féodal des siècles suivants, puis la formation en Europe des États-Nations rivaux condamnent à l'impuissance ceux qui tentent explicitement de restaurer l'empire universel de Charlemagne, en particulier les souverains du Saint-Empire romain germanique, d'Otton Ier en 962 à Charles Quint au XVIe siècle, voire Napoléon Ier, hanté par l'exemple du plus éminent des Carolingiens.
+
+La figure de Charlemagne a été l'objet de déchirements en Europe, notamment d'enjeu politique entre le XIIe et XIXe siècles entre la nation germanique qui considère le Saint-Empire romain comme le successeur légitime de l'empereur carolingien et la nation française qui en fait un élément central de la continuité dynastique des Capétiens. Pourtant, il peut être considéré comme le « Père de l'Europe », pour avoir assuré le regroupement d'une partie notable de l'Europe occidentale, et posé des principes de gouvernement dont ont hérité les grands États européens.
+
+Les deux principaux textes du IXe siècle qui dépeignent le Charlemagne réel, la Vita Caroli d'Éginhard et la Gesta Karoli Magni attribuée au moine de Saint-Gall Notker le Bègue, l'auréolent également de légendes et de mythes repris au cours des siècles suivants : « Il y a le Charlemagne de la société vassalique et féodale, le Charlemagne de la Croisade et de la Reconquête, le Charlemagne inventeur de la Couronne de France ou de la Couronne impériale, le Charlemagne mal canonisé mais tenu pour vrai saint de l'Église, le Charlemagne des bons écoliers ».
+        </div>
+        <!-- OBJECT-FIT -->
+        <br><br>
+        <h1>Object-fit</h1>
+        <center><a href="http://www.quizz.biz/uploads/quizz/796095/6_Grt93.jpg" target="_blank">
+                    <img src="http://www.quizz.biz/uploads/quizz/796095/6_Grt93.jpg" />
+                </a>
+                <a href="http://ichef.bbci.co.uk/wwfeatures/624_351/images/live/p0/26/3t/p0263tg7.jpg" target="_blank">
+                    <img src="http://ichef.bbci.co.uk/wwfeatures/624_351/images/live/p0/26/3t/p0263tg7.jpg" />
+                </a>
+                <a href="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688" target="_blank">
+                    <img src="https://support.files.wordpress.com/2009/07/pigeony.jpg?w=688" />
+                </a>
+                <a href="http://ekladata.com/fbV_SRVjXqGpCTNyEgwU0NrOb5g.jpg" target="_blank">
+                    <img src="http://images4.fanpop.com/image/photos/20800000/Magikarp-magikarp-20868566-400-350.png" onmouseout="this.src='http://images4.fanpop.com/image/photos/20800000/Magikarp-magikarp-20868566-400-350.png'" onmouseover="this.src='http://blogs-images.forbes.com/laurenorsini/files/2015/07/magikarp21.jpg'" title="Like a Boss !"/>
+                </a>
+        </center>
+    </body>
+</html>

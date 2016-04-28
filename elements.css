@@ -1,0 +1,95 @@
+/* background-origin:
+        défini le placement où l'image du background est positionnée
+*/
+body{
+    background:url('tf.png') no-repeat;
+    background-origin:content-box;
+    background-position: right top;
+    margin:0 auto;
+    padding: 0px 8px;
+}
+/* border-color
+        sert à changer la couleur des bords :O
+        border-color: couleur;
+            ou
+        border-color: couleur1 couleur2;
+            -> couleur1 étant la couleur pour les bordures top et bottom,
+            couleur2 pour left et right
+            
+    border-bottom-width
+        défini la largueur de la bordure basse d'un élément
+            
+    width
+        sert à définir la largeur d'un élément, trop dur
+*/
+
+input[list="test"]{
+    border-color: #007A6C #028700;
+    border-bottom-width: thick;
+    width:800px; 
+}
+/* line-height
+        bah, hauteur de ligne quoi :v
+    
+    word-spacing
+        défini l'espacement entre les mots
+  
+    font-style
+        défini un style du genre italique à du texte
+ */
+form{
+    background:rgb(224, 79, 22);
+    padding:8px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+p
+{
+    line-height: 20px;
+    word-spacing: 16px;
+    font-style: oblique;
+}
+
+/* column-rule-style
+        sert à définir un style de bordure à du contenu en colonne
+
+    column-rule-width
+        défini la largeur d'une bordure de colonne établie par le column-rule
+        
+    J'utilise -moz- vu que je suis FF, pas le jeu, le navigateur :3
+*/
+
+#histoire{
+    -moz-column-rule-style: dotted;
+    -moz-column-rule-width: thick;
+    /* Je défini un nombre de colonne ainsi que leur espacement avec count et gap*/
+    -moz-column-count: 4;
+    -moz-column-gap: 50px;
+}
+
+h1{
+    color:#D8410A;
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+    border:2px groove black;
+    background: rgba(46, 183, 31, 0.5);
+    border-radius: 5px;
+    box-shadow:4px 4px 8px #111;
+}
+
+/* object-fit
+        sert pour qu'un élement redimensionné garde ses bonnes proportions, c'est top cool
+        contain -> redimensionne pour avoir toute l'image aux bonnnes prop.
+        cover -> rogne l'image
+ */
+
+img{
+    width:180px;
+    height:180px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-left: 8px;
+    cursor: e-resize;
+}
